@@ -12,7 +12,7 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     content: "É até difícil escolher o que mais gostamos no Spark Leads. A plataforma realmente transforma a rotina: facilita a organização do negócio e ainda agiliza o atendimento com as mensagens centralizadas no próprio sistema. Tudo flui muito melhor.",
-    author: "Bia Mullet",
+    author: "Bia Mallet",
     role: "Agente Independente",
     rating: 5
   },
