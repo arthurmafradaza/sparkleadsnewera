@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, User } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -67,7 +67,9 @@ const Navbar = () => {
         {/* CTA Buttons */}
         <div className="hidden md:flex items-center space-x-4">
           <a href="https://app.sparkleads.pro/">
-            <Button variant="ghost" className="hover:text-spark-500">Entrar</Button>
+            <Button variant="outline" className="hover:text-spark-500 border-gray-200">
+              <User className="h-4 w-4 mr-2" /> Login
+            </Button>
           </a>
           <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
             <DialogTrigger asChild>
@@ -164,7 +166,9 @@ const Navbar = () => {
             </a>
             <div className="flex flex-col space-y-3 pt-4 border-t border-border px-4">
               <a href="https://app.sparkleads.pro/" className="w-full">
-                <Button variant="ghost" className="justify-center hover:text-spark-500 w-full py-3 text-base">Entrar</Button>
+                <Button variant="outline" className="justify-center hover:text-spark-500 w-full py-3 text-base border-gray-200">
+                  <User className="h-4 w-4 mr-2" /> Login
+                </Button>
               </a>
               <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
                 <DialogTrigger asChild>
