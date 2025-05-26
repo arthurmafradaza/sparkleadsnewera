@@ -158,7 +158,7 @@ const Features = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 max-w-3xl mx-auto">
           <div className="inline-flex items-center px-4 py-1.5 bg-spark-100 text-spark-800 rounded-full text-sm font-medium mb-3">
-            <Shield className="h-4 w-4 mr-2 text-spark-600" />
+            <Shield className="hidden md:block h-4 w-4 mr-2 text-spark-600" />
             Especializado em seguros. Focado em resultado. Livre de complicações.
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-3">
