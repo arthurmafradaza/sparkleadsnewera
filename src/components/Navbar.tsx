@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-import { Menu, X, MessageSquare } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -97,7 +97,7 @@ const Navbar = () => {
             className="rounded-full bg-green-500 hover:bg-green-600 text-white border-0"
             onClick={openWhatsApp}
           >
-            <MessageSquare className="h-5 w-5" />
+            <img src="/images/chat-icon.png" alt="Chat" className="h-5 w-5" />
           </Button>
         </div>
         
@@ -109,7 +109,7 @@ const Navbar = () => {
             className="rounded-full bg-green-500 hover:bg-green-600 text-white border-0 ml-1"
             onClick={openWhatsApp}
           >
-            <MessageSquare className="h-5 w-5" />
+            <img src="/images/chat-icon.png" alt="Chat" className="h-5 w-5" />
           </Button>
           
           <Button 
