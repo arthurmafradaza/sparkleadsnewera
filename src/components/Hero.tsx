@@ -13,9 +13,9 @@ const Hero = () => {
       
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
-          {/* Badge */}
+          {/* Badge - sem ícone para mobile */}
           <div className="mb-4 px-4 py-1.5 bg-spark-100 text-spark-800 rounded-full text-sm font-medium inline-flex items-center">
-            <span className="flex h-3 w-3 rounded-full bg-spark-500 mr-2"></span>
+            <span className="hidden md:flex h-3 w-3 rounded-full bg-spark-500 mr-2"></span>
             Desenvolvido para transformar agentes em máquinas de vendas
           </div>
           
@@ -119,30 +119,20 @@ const Hero = () => {
                   </div>
                 </div>
                 
-                {/* Pop-ups para Mobile - Versão simplificada */}
+                {/* Pop-ups para Mobile - Versão simplificada sem ícones */}
                 <div className="md:hidden">
-                  {/* Alternativa: Pop-ups menores e mais simples em mobile */}
-                  <div className="absolute top-2 right-2 bg-white dark:bg-gray-800 rounded-md shadow-md p-1.5 border border-border animate-float z-10" 
+                  {/* Alternativa: Pop-ups sem ícones em mobile */}
+                  <div className="absolute top-2 right-2 bg-white dark:bg-gray-800 rounded-md shadow-md p-2 border border-border animate-float z-10" 
                     style={{ maxWidth: "125px", fontSize: "0.7rem" }}>
-                    <div className="flex gap-1.5 items-center">
-                      <div className="rounded-full h-6 w-6 bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0">
-                        <Shield size={14} strokeWidth={2.5} />
-                      </div>
-                      <div className="overflow-hidden">
-                        <p className="text-xs font-medium whitespace-nowrap">Nova Apólice</p>
-                      </div>
+                    <div className="text-center">
+                      <p className="text-xs font-medium">Nova Apólice</p>
                     </div>
                   </div>
                   
-                  <div className="absolute bottom-2 left-2 bg-white dark:bg-gray-800 rounded-md shadow-md p-1.5 border border-border animate-float z-10" 
+                  <div className="absolute bottom-2 left-2 bg-white dark:bg-gray-800 rounded-md shadow-md p-2 border border-border animate-float z-10" 
                     style={{ animationDelay: '1s', maxWidth: "125px", fontSize: "0.7rem" }}>
-                    <div className="flex gap-1.5 items-center">
-                      <div className="rounded-full h-6 w-6 bg-blue-100 flex items-center justify-center text-blue-600 flex-shrink-0">
-                        <Calendar size={14} strokeWidth={2.5} />
-                      </div>
-                      <div className="overflow-hidden">
-                        <p className="text-xs font-medium whitespace-nowrap">Renovação</p>
-                      </div>
+                    <div className="text-center">
+                      <p className="text-xs font-medium">Renovação</p>
                     </div>
                   </div>
                 </div>
@@ -154,22 +144,22 @@ const Hero = () => {
         {/* Stats para telas móveis - posicionados após a imagem */}
         <div className="mt-4 grid grid-cols-2 md:hidden gap-3 w-full max-w-3xl mx-auto">
           <div className="flex flex-col items-center">
-            <div className="text-spark-600 mb-1 bg-spark-100 rounded-full p-2"><Users size={18} /></div>
+            <div className="hidden text-spark-600 mb-1 bg-spark-100 rounded-full p-2"><Users size={18} /></div>
             <p className="text-lg font-bold">2500+</p>
             <p className="text-xs text-muted-foreground">Agentes ativos</p>
           </div>
           <div className="flex flex-col items-center">
-            <div className="text-spark-600 mb-1 bg-spark-100 rounded-full p-2"><Shield size={18} /></div>
+            <div className="hidden text-spark-600 mb-1 bg-spark-100 rounded-full p-2"><Shield size={18} /></div>
             <p className="text-lg font-bold">150k+</p>
             <p className="text-xs text-muted-foreground">Apólices vendidas</p>
           </div>
           <div className="flex flex-col items-center">
-            <div className="text-spark-600 mb-1 bg-spark-100 rounded-full p-2"><FileCheck size={18} /></div>
+            <div className="hidden text-spark-600 mb-1 bg-spark-100 rounded-full p-2"><FileCheck size={18} /></div>
             <p className="text-lg font-bold">8,5h</p>
             <p className="text-xs text-muted-foreground">Tempo economizado</p>
           </div>
           <div className="flex flex-col items-center">
-            <div className="text-spark-600 mb-1 bg-spark-100 rounded-full p-2"><Zap size={18} /></div>
+            <div className="hidden text-spark-600 mb-1 bg-spark-100 rounded-full p-2"><Zap size={18} /></div>
             <p className="text-lg font-bold">37%</p>
             <p className="text-xs text-muted-foreground">+ Conversão</p>
           </div>
