@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           {/* Badge - sem ícone para mobile */}
-          <div className="mb-3 px-3 py-1 bg-spark-100 text-spark-800 rounded-full text-xs font-medium inline-flex items-center">
+          <div className="mb-4 px-4 py-1.5 bg-spark-100 text-spark-800 rounded-full text-sm font-medium inline-flex items-center">
             <span className="hidden md:flex h-2 w-2 rounded-full bg-spark-500 mr-1.5"></span>
             Desenvolvido para transformar agentes em máquinas de vendas
           </div>
