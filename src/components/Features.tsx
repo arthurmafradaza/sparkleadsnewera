@@ -202,10 +202,10 @@ const Features = () => {
                     ))}
                   </ul>
                   
-                  <div className="mt-4">
+                  <div className="mt-6 flex justify-center">
                     <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
                       <DialogTrigger asChild>
-                        <Button className="bg-gradient-primary">Organize sua operação em minutos</Button>
+                        <Button className="bg-gradient-primary text-lg py-6 px-8">Organize sua operação em minutos</Button>
                       </DialogTrigger>
                       <DialogContent className="sm:max-w-[700px] max-h-[90vh] overflow-auto">
                         <DialogHeader>
