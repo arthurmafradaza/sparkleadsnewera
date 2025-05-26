@@ -56,17 +56,17 @@ const Navbar = () => {
         </div>
         
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-6">
-          <a href="/" className="text-sm hover:text-spark-500 transition-colors">Home</a>
-          <a href="#features" className="text-sm hover:text-spark-500 transition-colors">Funcionalidades</a>
-          <a href="#benefits" className="text-sm hover:text-spark-500 transition-colors">Vantagens</a>
-          <a href="#testimonials" className="text-sm hover:text-spark-500 transition-colors">Depoimentos</a>
+        <div className="hidden md:flex items-center space-x-8">
+          <a href="/" className="text-sm font-medium hover:text-spark-500 transition-colors">Home</a>
+          <a href="#features" className="text-sm font-medium hover:text-spark-500 transition-colors">Funcionalidades</a>
+          <a href="#benefits" className="text-sm font-medium hover:text-spark-500 transition-colors">Vantagens</a>
+          <a href="#testimonials" className="text-sm font-medium hover:text-spark-500 transition-colors">Depoimentos</a>
         </div>
         
         {/* CTA Buttons */}
-        <div className="hidden md:flex items-center space-x-3">
+        <div className="hidden md:flex items-center space-x-4">
           <a href="https://app.sparkleads.pro/">
-            <Button variant="ghost" size="sm" className="hover:text-spark-500">
+            <Button variant="ghost" size="sm" className="hover:text-spark-500 font-medium">
               <User className="h-4 w-4 mr-1.5" /> Entrar
             </Button>
           </a>
