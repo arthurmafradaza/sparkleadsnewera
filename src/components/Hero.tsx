@@ -85,33 +85,64 @@ const Hero = () => {
                 <img 
                   src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1440&h=500"
                   alt="SparkLeads Dashboard para Agentes de Seguro" 
-                  className="w-full h-auto object-cover max-h-[230px]" 
+                  className="w-full h-auto object-cover max-h-[180px] md:max-h-[230px]" 
                 />
                 
-                {/* Pop-up Nova Apólice */}
-                <div className="absolute top-2 md:top-4 right-2 md:right-4 bg-white dark:bg-gray-800 rounded-lg shadow-xl p-2 md:p-3 border border-border animate-float z-10" 
-                  style={{ maxWidth: "160px", fontSize: "0.75rem" }}>
-                  <div className="flex gap-1 md:gap-2 items-center">
-                    <div className="rounded-full h-6 w-6 md:h-8 md:w-8 bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0">
-                      <Shield size={14} />
+                {/* Pop-ups para Desktop */}
+                <div className="hidden md:block">
+                  {/* Pop-up Nova Apólice */}
+                  <div className="absolute top-4 right-4 bg-white dark:bg-gray-800 rounded-lg shadow-xl p-3 border border-border animate-float z-10" 
+                    style={{ maxWidth: "180px", fontSize: "0.75rem" }}>
+                    <div className="flex gap-2 items-center">
+                      <div className="rounded-full h-8 w-8 bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0">
+                        <Shield size={14} />
+                      </div>
+                      <div>
+                        <p className="text-xs font-medium">Nova Apólice</p>
+                        <p className="text-xs text-muted-foreground" style={{ fontSize: "0.65rem" }}>Carlos acabou de contratar seguro</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="text-xs font-medium">Nova Apólice</p>
-                      <p className="text-xs text-muted-foreground" style={{ fontSize: "0.65rem" }}>Carlos acabou de contratar seguro</p>
+                  </div>
+                  
+                  {/* Pop-up Renovação Automática */}
+                  <div className="absolute bottom-4 left-4 bg-white dark:bg-gray-800 rounded-lg shadow-xl p-3 border border-border animate-float z-10" 
+                    style={{ animationDelay: '1s', maxWidth: "180px", fontSize: "0.75rem" }}>
+                    <div className="flex gap-2 items-center">
+                      <div className="rounded-full h-8 w-8 bg-blue-100 flex items-center justify-center text-blue-600 flex-shrink-0">
+                        <Calendar size={14} />
+                      </div>
+                      <div>
+                        <p className="text-xs font-medium">Renovação</p>
+                        <p className="text-xs text-muted-foreground" style={{ fontSize: "0.65rem" }}>5 clientes para contatar</p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 
-                {/* Pop-up Renovação Automática */}
-                <div className="absolute bottom-2 md:bottom-4 left-2 md:left-4 bg-white dark:bg-gray-800 rounded-lg shadow-xl p-2 md:p-3 border border-border animate-float z-10" 
-                  style={{ animationDelay: '1s', maxWidth: "160px", fontSize: "0.75rem" }}>
-                  <div className="flex gap-1 md:gap-2 items-center">
-                    <div className="rounded-full h-6 w-6 md:h-8 md:w-8 bg-blue-100 flex items-center justify-center text-blue-600 flex-shrink-0">
-                      <Calendar size={14} />
+                {/* Pop-ups para Mobile - Versão simplificada */}
+                <div className="md:hidden">
+                  {/* Alternativa: Pop-ups menores e mais simples em mobile */}
+                  <div className="absolute top-2 right-2 bg-white dark:bg-gray-800 rounded-md shadow-md p-1.5 border border-border animate-float z-10" 
+                    style={{ maxWidth: "120px", fontSize: "0.7rem" }}>
+                    <div className="flex gap-1.5 items-center">
+                      <div className="rounded-full h-5 w-5 bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0">
+                        <Shield size={10} />
+                      </div>
+                      <div className="overflow-hidden">
+                        <p className="text-xs font-medium whitespace-nowrap">Nova Apólice</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="text-xs font-medium">Renovação</p>
-                      <p className="text-xs text-muted-foreground" style={{ fontSize: "0.65rem" }}>5 clientes para contatar</p>
+                  </div>
+                  
+                  <div className="absolute bottom-2 left-2 bg-white dark:bg-gray-800 rounded-md shadow-md p-1.5 border border-border animate-float z-10" 
+                    style={{ animationDelay: '1s', maxWidth: "120px", fontSize: "0.7rem" }}>
+                    <div className="flex gap-1.5 items-center">
+                      <div className="rounded-full h-5 w-5 bg-blue-100 flex items-center justify-center text-blue-600 flex-shrink-0">
+                        <Calendar size={10} />
+                      </div>
+                      <div className="overflow-hidden">
+                        <p className="text-xs font-medium whitespace-nowrap">Renovação</p>
+                      </div>
                     </div>
                   </div>
                 </div>
