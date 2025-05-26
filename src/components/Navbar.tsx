@@ -68,7 +68,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-4">
           <a href="https://app.sparkleads.pro/">
             <Button variant="outline" className="hover:text-spark-500 border-gray-200">
-              <User className="h-4 w-4 mr-2" /> Login
+              <User className="h-4 w-4 mr-2" /> Entrar
             </Button>
           </a>
           <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
@@ -167,7 +167,7 @@ const Navbar = () => {
             <div className="flex flex-col space-y-3 pt-4 border-t border-border px-4">
               <a href="https://app.sparkleads.pro/" className="w-full">
                 <Button variant="outline" className="justify-center hover:text-spark-500 w-full py-3 text-base border-gray-200">
-                  <User className="h-4 w-4 mr-2" /> Login
+                  <User className="h-4 w-4 mr-2" /> Entrar
                 </Button>
               </a>
               <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
