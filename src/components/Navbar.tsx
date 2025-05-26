@@ -43,37 +43,37 @@ const Navbar = () => {
   
   return (
     <nav className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b border-border shadow-sm">
-      <div className="container mx-auto flex items-center justify-between py-4 md:py-6">
+      <div className="container mx-auto flex items-center justify-between py-3 md:py-4">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <div className="flex items-center">
             <img 
               src="https://storage.googleapis.com/msgsndr/efZEjK6PqtPGDHqB2vV6/media/68308a5b6126fb2ff83364c7.png" 
               alt="SparkLeads.pro" 
-              className="h-10 md:h-12 w-auto" 
+              className="h-9 md:h-10 w-auto" 
             />
           </div>
         </div>
         
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
-          <a href="/" className="text-sm font-medium hover:text-spark-500 transition-colors">Home</a>
-          <a href="#features" className="text-sm font-medium hover:text-spark-500 transition-colors">Funcionalidades</a>
-          <a href="#benefits" className="text-sm font-medium hover:text-spark-500 transition-colors">Vantagens</a>
-          <a href="#planos" className="text-sm font-medium hover:text-spark-500 transition-colors">Planos</a>
-          <a href="#testimonials" className="text-sm font-medium hover:text-spark-500 transition-colors">Depoimentos</a>
+        <div className="hidden md:flex items-center space-x-6">
+          <a href="/" className="text-sm hover:text-spark-500 transition-colors">Home</a>
+          <a href="#features" className="text-sm hover:text-spark-500 transition-colors">Funcionalidades</a>
+          <a href="#benefits" className="text-sm hover:text-spark-500 transition-colors">Vantagens</a>
+          <a href="#planos" className="text-sm hover:text-spark-500 transition-colors">Planos</a>
+          <a href="#testimonials" className="text-sm hover:text-spark-500 transition-colors">Depoimentos</a>
         </div>
         
         {/* CTA Buttons */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden md:flex items-center space-x-3">
           <a href="https://app.sparkleads.pro/">
-            <Button variant="outline" className="hover:text-spark-500 border-gray-200">
-              <User className="h-4 w-4 mr-2" /> Entrar
+            <Button variant="ghost" size="sm" className="hover:text-spark-500">
+              <User className="h-4 w-4 mr-1.5" /> Entrar
             </Button>
           </a>
           <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
             <DialogTrigger asChild>
-              <Button className="bg-gradient-primary hover:opacity-90">Agendar Demonstração</Button>
+              <Button size="sm" className="bg-gradient-primary hover:opacity-90">Agendar Demonstração</Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[700px] max-h-[90vh] overflow-auto">
               <DialogHeader>
@@ -96,10 +96,10 @@ const Navbar = () => {
           <Button 
             variant="outline" 
             size="icon" 
-            className="rounded-full bg-green-500 hover:bg-green-600 text-white border-0 h-10 w-10 flex items-center justify-center"
+            className="rounded-full bg-green-500 hover:bg-green-600 text-white border-0 h-8 w-8 flex items-center justify-center"
             onClick={openWhatsApp}
           >
-            <img src="/images/chat-icon.png" alt="Chat" className="h-6 w-6 filter brightness-0 invert" />
+            <img src="/images/chat-icon.png" alt="Chat" className="h-5 w-5 filter brightness-0 invert" />
           </Button>
         </div>
         
@@ -108,19 +108,19 @@ const Navbar = () => {
           <Button 
             variant="outline" 
             size="icon" 
-            className="rounded-full bg-green-500 hover:bg-green-600 text-white border-0 h-10 w-10 flex items-center justify-center"
+            className="rounded-full bg-green-500 hover:bg-green-600 text-white border-0 h-8 w-8 flex items-center justify-center"
             onClick={openWhatsApp}
           >
-            <img src="/images/chat-icon.png" alt="Chat" className="h-8 w-8 filter brightness-0 invert" />
+            <img src="/images/chat-icon.png" alt="Chat" className="h-5 w-5 filter brightness-0 invert" />
           </Button>
           
           <Button 
             variant="ghost" 
             size="icon" 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="p-2"
+            className="p-1.5"
           >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
         </div>
       </div>
@@ -164,10 +164,10 @@ const Navbar = () => {
             >
               Depoimentos
             </a>
-            <div className="flex flex-col space-y-3 pt-4 border-t border-border px-4">
+            <div className="flex flex-col space-y-2 pt-3 border-t border-border px-4">
               <a href="https://app.sparkleads.pro/" className="w-full">
-                <Button variant="outline" className="justify-center hover:text-spark-500 w-full py-3 text-base border-gray-200">
-                  <User className="h-4 w-4 mr-2" /> Entrar
+                <Button variant="ghost" className="justify-center hover:text-spark-500 w-full py-2 text-sm">
+                  <User className="h-4 w-4 mr-1.5" /> Entrar
                 </Button>
               </a>
               <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
