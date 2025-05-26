@@ -125,3 +125,6 @@ body {
 .animate-float {
   animation: float 4s ease-in-out infinite;
 }
+
+/* Importar estilos específicos para mobile */
+@import './mobile.css';

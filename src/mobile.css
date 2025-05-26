@@ -1,0 +1,114 @@
+/* Estilos específicos para dispositivos móveis */
+
+/* Melhorar espaçamento geral em dispositivos móveis */
+@media (max-width: 768px) {
+  /* Aumentar padding horizontal para melhor legibilidade */
+  .container {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  /* Aumentar tamanho de fonte para melhor legibilidade */
+  body {
+    font-size: 16px;
+  }
+
+  /* Melhorar espaçamento de seções */
+  section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  /* Aumentar tamanho dos botões para facilitar o toque */
+  .btn, button, [type="button"] {
+    min-height: 48px;
+    min-width: 48px;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+  }
+
+  /* Aumentar espaçamento entre itens de lista */
+  .space-y-4 > * {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Melhorar a visualização de tabelas e grids em mobile */
+  .p-4 {
+    padding: 1rem;
+  }
+
+  /* Melhorar espaçamento em cards e elementos de comparação */
+  .bg-gray-50, .bg-spark-50 {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Melhorar espaçamento nos ícones */
+  svg {
+    min-width: 20px;
+    min-height: 20px;
+  }
+
+  /* Melhorar a navegação mobile */
+  .md\:hidden .container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  /* Ajustar botões no menu mobile */
+  .md\:hidden .space-y-2 {
+    margin-top: 1rem;
+  }
+
+  /* Melhorar visualização de iframe em modais */
+  iframe {
+    min-height: 550px !important;
+  }
+
+  /* Ajustar headers para melhor legibilidade */
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+  }
+  
+  /* Melhorar o contraste e tamanho do texto em gradientes */
+  .text-gradient {
+    font-weight: 700;
+  }
+  
+  /* Melhorar espaçamento em tabelas de comparação */
+  .p-4 {
+    padding: 1rem !important;
+  }
+}
+
+/* Corrigir problemas específicos de elementos */
+@media (max-width: 768px) {
+  /* Melhorar display em cards e tabelas comparativas */
+  .bg-spark-50, .bg-gray-50 {
+    border-radius: 0.5rem;
+  }
+  
+  /* Melhorar tamanho de checkbox e ícones de verificação */
+  .h-5, .w-5 {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+  
+  /* Melhorar margens em botões do menu mobile */
+  .md\:hidden .flex.space-x-2 {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  /* Ajustar largura de botões no mobile */
+  .md\:hidden .w-full {
+    width: 100%;
+  }
+} 

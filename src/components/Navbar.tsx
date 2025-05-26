@@ -14,6 +14,11 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   
+  // Fechar o menu mobile quando um link é clicado
+  const handleNavLinkClick = () => {
+    setIsMenuOpen(false);
+  };
+  
   useEffect(() => {
     // Carregar o script do formulário após a montagem do componente quando o modal é aberto
     if (isDialogOpen) {
@@ -37,15 +42,15 @@ const Navbar = () => {
   };
   
   return (
-    <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto flex items-center justify-between py-6">
+    <nav className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b border-border shadow-sm">
+      <div className="container mx-auto flex items-center justify-between py-4 md:py-6">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <div className="flex items-center">
             <img 
               src="https://storage.googleapis.com/msgsndr/efZEjK6PqtPGDHqB2vV6/media/68308a5b6126fb2ff83364c7.png" 
               alt="SparkLeads.pro" 
-              className="h-12 w-auto" 
+              className="h-10 md:h-12 w-auto" 
             />
           </div>
         </div>
@@ -97,58 +102,92 @@ const Navbar = () => {
         </div>
         
         {/* Mobile menu button */}
-        <div className="md:hidden">
-          <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            <Menu />
+        <div className="flex items-center space-x-2 md:hidden">
+          <Button 
+            variant="outline" 
+            size="icon" 
+            className="rounded-full bg-green-500 hover:bg-green-600 text-white border-0 ml-1"
+            onClick={openWhatsApp}
+          >
+            <MessageSquare className="h-5 w-5" />
+          </Button>
+          
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="p-2"
+          >
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>
       </div>
       
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-background border-b border-border">
+        <div className="md:hidden bg-background border-b border-border shadow-md">
           <div className="container mx-auto py-4 space-y-4">
-            <a href="/" className="block text-sm font-medium hover:text-spark-500 transition-colors">Home</a>
-            <a href="#features" className="block text-sm font-medium hover:text-spark-500 transition-colors">Funcionalidades</a>
-            <a href="#benefits" className="block text-sm font-medium hover:text-spark-500 transition-colors">Vantagens</a>
-            <a href="#planos" className="block text-sm font-medium hover:text-spark-500 transition-colors">Planos</a>
-            <a href="#testimonials" className="block text-sm font-medium hover:text-spark-500 transition-colors">Depoimentos</a>
-            <div className="flex flex-col space-y-2 pt-4 border-t border-border">
+            <a 
+              href="/" 
+              className="block text-base font-medium hover:text-spark-500 transition-colors py-3 px-4 rounded-lg hover:bg-gray-50"
+              onClick={handleNavLinkClick}
+            >
+              Home
+            </a>
+            <a 
+              href="#features" 
+              className="block text-base font-medium hover:text-spark-500 transition-colors py-3 px-4 rounded-lg hover:bg-gray-50"
+              onClick={handleNavLinkClick}
+            >
+              Funcionalidades
+            </a>
+            <a 
+              href="#benefits" 
+              className="block text-base font-medium hover:text-spark-500 transition-colors py-3 px-4 rounded-lg hover:bg-gray-50"
+              onClick={handleNavLinkClick}
+            >
+              Vantagens
+            </a>
+            <a 
+              href="#planos" 
+              className="block text-base font-medium hover:text-spark-500 transition-colors py-3 px-4 rounded-lg hover:bg-gray-50"
+              onClick={handleNavLinkClick}
+            >
+              Planos
+            </a>
+            <a 
+              href="#testimonials" 
+              className="block text-base font-medium hover:text-spark-500 transition-colors py-3 px-4 rounded-lg hover:bg-gray-50"
+              onClick={handleNavLinkClick}
+            >
+              Depoimentos
+            </a>
+            <div className="flex flex-col space-y-3 pt-4 border-t border-border px-4">
               <a href="https://app.sparkleads.pro/" className="w-full">
-                <Button variant="ghost" className="justify-center hover:text-spark-500 w-full">Entrar</Button>
+                <Button variant="ghost" className="justify-center hover:text-spark-500 w-full py-3 text-base">Entrar</Button>
               </a>
-              <div className="flex space-x-2">
-                <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-                  <DialogTrigger asChild>
-                    <Button className="justify-center bg-gradient-primary hover:opacity-90 w-full">Agendar Demonstração</Button>
-                  </DialogTrigger>
-                  <DialogContent className="sm:max-w-[700px] max-h-[90vh] overflow-auto">
-                    <DialogHeader>
-                      <DialogTitle className="text-xl text-center">Agende sua demonstração</DialogTitle>
-                      <DialogDescription className="text-center mb-4">
-                        Escolha um horário que funcione melhor para você.
-                      </DialogDescription>
-                    </DialogHeader>
-                    <div className="pt-2">
-                      <iframe 
-                        src="https://internal.sparkleads.pro/widget/booking/cFxp3HNIh6NAPRv2p4VZ" 
-                        style={{ width: '100%', border: 'none', overflow: 'hidden' }} 
-                        scrolling="no" 
-                        id="cFxp3HNIh6NAPRv2p4VZ_1748012106009_mobile"
-                        className="min-h-[600px]"
-                      ></iframe>
-                    </div>
-                  </DialogContent>
-                </Dialog>
-                <Button 
-                  variant="outline" 
-                  size="icon" 
-                  className="rounded-full bg-green-500 hover:bg-green-600 text-white border-0"
-                  onClick={openWhatsApp}
-                >
-                  <MessageSquare className="h-5 w-5" />
-                </Button>
-              </div>
+              <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+                <DialogTrigger asChild>
+                  <Button className="justify-center bg-gradient-primary hover:opacity-90 w-full py-6 text-base">Agendar Demonstração</Button>
+                </DialogTrigger>
+                <DialogContent className="sm:max-w-[700px] max-h-[90vh] overflow-auto">
+                  <DialogHeader>
+                    <DialogTitle className="text-xl text-center">Agende sua demonstração</DialogTitle>
+                    <DialogDescription className="text-center mb-4">
+                      Escolha um horário que funcione melhor para você.
+                    </DialogDescription>
+                  </DialogHeader>
+                  <div className="pt-2">
+                    <iframe 
+                      src="https://internal.sparkleads.pro/widget/booking/cFxp3HNIh6NAPRv2p4VZ" 
+                      style={{ width: '100%', border: 'none', overflow: 'hidden' }} 
+                      scrolling="no" 
+                      id="cFxp3HNIh6NAPRv2p4VZ_1748012106009_mobile"
+                      className="min-h-[600px]"
+                    ></iframe>
+                  </div>
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
         </div>

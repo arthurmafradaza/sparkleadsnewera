@@ -14,20 +14,20 @@ const CTA = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   
   return (
-    <section id="pricing" className="py-8">
-      <div className="container mx-auto px-4">
+    <section id="pricing" className="py-8 md:py-12">
+      <div className="container mx-auto px-4 md:px-8">
         <div className="relative bg-gradient-to-br from-spark-50 to-spark-100 dark:from-gray-900 dark:to-gray-800 rounded-3xl overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-spark-500/20 to-transparent"></div>
           
           <div className="relative p-4 md:p-8">
-            <div className="max-w-4xl mx-auto text-center mb-6">
+            <div className="max-w-4xl mx-auto text-center mb-6 md:mb-10">
               <div className="mb-3">
                 <Shield className="h-10 w-10 mx-auto text-spark-500 mb-2" />
               </div>
-              <h2 className="text-2xl md:text-4xl font-bold mb-2">
+              <h2 className="text-2xl md:text-4xl font-bold mb-4">
                 Deixe de ser <span className="text-gradient">corretor de planilhas</span> e volte a vender seguros
               </h2>
-              <p className="text-base md:text-xl mb-4">
+              <p className="text-base md:text-xl mb-4 mx-auto max-w-2xl">
                 A SparkLeads centraliza tudo para que você foque no que faz diferença: proteger famílias e bater metas
               </p>
             </div>
@@ -129,95 +129,53 @@ const CTA = () => {
             {/* Pricing comparison - Mobile */}
             <div className="max-w-5xl mx-auto overflow-hidden bg-white dark:bg-gray-800 rounded-xl shadow-xl md:hidden">
               <div className="p-4 bg-secondary dark:bg-gray-900 border-b text-center">
-                <div className="font-bold text-lg">Compare Você Mesmo!</div>
+                <div className="font-bold text-lg mb-1">Compare Você Mesmo!</div>
               </div>
               
               <div className="divide-y">
-                <div className="p-4">
-                  <div className="flex items-center mb-2">
-                    <Clock className="h-5 w-5 mr-2 text-spark-500" />
-                    <p className="font-medium">CRM & Gestão de Pipeline</p>
+                <div className="p-5">
+                  <div className="flex items-center mb-3">
+                    <Clock className="h-6 w-6 mr-3 text-spark-500 flex-shrink-0" />
+                    <p className="font-medium text-base">CRM & Gestão de Pipeline</p>
                   </div>
-                  <div className="bg-gray-50 rounded-lg p-2 text-center mb-2">
+                  <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-3 text-center mb-3 font-medium">
                     US$ 49/mês
                   </div>
-                  <div className="bg-spark-50 rounded-lg p-2 flex justify-between items-center">
+                  <div className="bg-spark-50 dark:bg-spark-900/20 rounded-lg p-3 flex justify-between items-center">
                     <span className="font-medium">SparkLeads</span>
-                    <CheckCircle className="h-5 w-5 text-green-500" />
+                    <CheckCircle className="h-6 w-6 text-green-500" />
                   </div>
                 </div>
                 
-                <div className="p-4">
-                  <div className="flex items-center mb-2">
-                    <FileCheck className="h-5 w-5 mr-2 text-spark-500" />
-                    <p className="font-medium">Automação de Renovações</p>
+                <div className="p-5">
+                  <div className="flex items-center mb-3">
+                    <FileCheck className="h-6 w-6 mr-3 text-spark-500 flex-shrink-0" />
+                    <p className="font-medium text-base">Automação de Renovações</p>
                   </div>
-                  <div className="bg-gray-50 rounded-lg p-2 text-center mb-2">
+                  <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-3 text-center mb-3 font-medium">
                     US$ 39/mês
                   </div>
-                  <div className="bg-spark-50 rounded-lg p-2 flex justify-between items-center">
+                  <div className="bg-spark-50 dark:bg-spark-900/20 rounded-lg p-3 flex justify-between items-center">
                     <span className="font-medium">SparkLeads</span>
-                    <CheckCircle className="h-5 w-5 text-green-500" />
+                    <CheckCircle className="h-6 w-6 text-green-500" />
                   </div>
                 </div>
                 
-                <div className="p-4">
-                  <div className="flex items-center mb-2">
-                    <MessageSquare className="h-5 w-5 mr-2 text-spark-500" />
-                    <p className="font-medium">WhatsApp & SMS Integrados</p>
+                <div className="p-5">
+                  <div className="flex items-center mb-3">
+                    <MessageSquare className="h-6 w-6 mr-3 text-spark-500 flex-shrink-0" />
+                    <p className="font-medium text-base">WhatsApp & SMS Integrados</p>
                   </div>
-                  <div className="bg-gray-50 rounded-lg p-2 text-center mb-2">
+                  <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-3 text-center mb-3 font-medium">
                     US$ 29/mês
                   </div>
-                  <div className="bg-spark-50 rounded-lg p-2 flex justify-between items-center">
+                  <div className="bg-spark-50 dark:bg-spark-900/20 rounded-lg p-3 flex justify-between items-center">
                     <span className="font-medium">SparkLeads</span>
-                    <CheckCircle className="h-5 w-5 text-green-500" />
-                  </div>
-                </div>
-                
-                <div className="p-4">
-                  <div className="flex items-center mb-2">
-                    <Users className="h-5 w-5 mr-2 text-spark-500" />
-                    <p className="font-medium">Agendamentos & Lembretes</p>
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-2 text-center mb-2">
-                    US$ 19/mês
-                  </div>
-                  <div className="bg-spark-50 rounded-lg p-2 flex justify-between items-center">
-                    <span className="font-medium">SparkLeads</span>
-                    <CheckCircle className="h-5 w-5 text-green-500" />
-                  </div>
-                </div>
-                
-                <div className="p-4">
-                  <div className="flex items-center mb-2">
-                    <BarChart className="h-5 w-5 mr-2 text-spark-500" />
-                    <p className="font-medium">Analytics & Relatórios</p>
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-2 text-center mb-2">
-                    US$ 29/mês
-                  </div>
-                  <div className="bg-spark-50 rounded-lg p-2 flex justify-between items-center">
-                    <span className="font-medium">SparkLeads</span>
-                    <CheckCircle className="h-5 w-5 text-green-500" />
-                  </div>
-                </div>
-                
-                <div className="p-4">
-                  <div className="flex items-center mb-2">
-                    <Zap className="h-5 w-5 mr-2 text-spark-500" />
-                    <p className="font-medium">Workflows e Automações</p>
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-2 text-center mb-2">
-                    US$ 159/mês
-                  </div>
-                  <div className="bg-spark-50 rounded-lg p-2 flex justify-between items-center">
-                    <span className="font-medium">SparkLeads</span>
-                    <CheckCircle className="h-5 w-5 text-green-500" />
+                    <CheckCircle className="h-6 w-6 text-green-500" />
                   </div>
                 </div>
               </div>
-              <div className="p-2 text-xs text-muted-foreground text-center">
+              <div className="p-3 text-sm text-muted-foreground text-center">
                 Tenha tudo em uma única plataforma integrada.
               </div>
             </div>
@@ -225,8 +183,8 @@ const CTA = () => {
             <div className="mt-8 text-center">
               <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
                 <DialogTrigger asChild>
-                  <Button size="lg" className="bg-gradient-primary hover:opacity-90 text-sm md:text-base px-4 py-2 md:px-6 md:py-3">
-                    Transforme sua agência agora <Zap className="ml-2 h-4 w-4" />
+                  <Button size="lg" className="bg-gradient-primary hover:opacity-90 text-base px-6 py-6 md:px-8 md:py-6 rounded-xl">
+                    Transforme sua agência agora <Zap className="ml-2 h-5 w-5" />
                   </Button>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-[700px] max-h-[90vh] overflow-auto">
