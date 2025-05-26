@@ -60,7 +60,6 @@ const Navbar = () => {
           <a href="/" className="text-sm hover:text-spark-500 transition-colors">Home</a>
           <a href="#features" className="text-sm hover:text-spark-500 transition-colors">Funcionalidades</a>
           <a href="#benefits" className="text-sm hover:text-spark-500 transition-colors">Vantagens</a>
-          <a href="#planos" className="text-sm hover:text-spark-500 transition-colors">Planos</a>
           <a href="#testimonials" className="text-sm hover:text-spark-500 transition-colors">Depoimentos</a>
         </div>
         
@@ -149,13 +148,6 @@ const Navbar = () => {
               onClick={handleNavLinkClick}
             >
               Vantagens
-            </a>
-            <a 
-              href="#planos" 
-              className="block text-base font-medium hover:text-spark-500 transition-colors py-3 px-4 rounded-lg hover:bg-gray-50"
-              onClick={handleNavLinkClick}
-            >
-              Planos
             </a>
             <a 
               href="#testimonials" 
