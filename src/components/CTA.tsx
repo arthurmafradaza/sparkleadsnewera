@@ -25,7 +25,7 @@ const CTA = () => {
                 <Shield className="h-10 w-10 mx-auto text-spark-500 mb-2" />
               </div>
               <h2 className="text-2xl md:text-4xl font-bold mb-4">
-                Chega de improviso, <span className="text-gradient">Organize sua rotina</span> e aumente suas vendas.
+                Chega de improviso. <span className="text-gradient">Organize sua rotina</span> e aumente suas vendas.
               </h2>
               <p className="text-base md:text-xl mb-4 mx-auto max-w-2xl">
                 A SparkLeads centraliza tudo para que você foque no que faz diferença: proteger famílias e bater metas.
