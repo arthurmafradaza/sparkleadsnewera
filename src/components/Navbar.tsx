@@ -94,10 +94,10 @@ const Navbar = () => {
           <Button 
             variant="outline" 
             size="icon" 
-            className="rounded-full bg-green-500 hover:bg-green-600 text-white border-0"
+            className="rounded-full bg-green-500 hover:bg-green-600 text-white border-0 h-12 w-12 flex items-center justify-center"
             onClick={openWhatsApp}
           >
-            <img src="/images/chat-icon.png" alt="Chat" className="h-20 w-20" />
+            <img src="/images/chat-icon.png" alt="Chat" className="h-7 w-7" />
           </Button>
         </div>
         
@@ -106,10 +106,10 @@ const Navbar = () => {
           <Button 
             variant="outline" 
             size="icon" 
-            className="rounded-full bg-green-500 hover:bg-green-600 text-white border-0 ml-1"
+            className="rounded-full bg-green-500 hover:bg-green-600 text-white border-0 ml-1 h-12 w-12 flex items-center justify-center"
             onClick={openWhatsApp}
           >
-            <img src="/images/chat-icon.png" alt="Chat" className="h-6 w-6" />
+            <img src="/images/chat-icon.png" alt="Chat" className="h-7 w-7" />
           </Button>
           
           <Button 
