@@ -4,38 +4,38 @@ import { Calendar, MessageSquare, Users, Zap, FileCheck, Shield } from "lucide-r
 
 const Hero = () => {
   return (
-    <section className="relative pt-4 pb-1 overflow-hidden">
+    <section className="relative pt-2 md:pt-4 pb-0 md:pb-1 overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-spark-500/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-spark-500/10 rounded-full blur-3xl"></div>
       </div>
       
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-3 md:px-4">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           {/* Badge - sem ícone para mobile */}
-          <div className="mb-4 px-4 py-1.5 bg-spark-100 text-spark-800 rounded-full text-sm font-medium inline-flex items-center">
+          <div className="mb-2 md:mb-4 px-3 md:px-4 py-1 md:py-1.5 bg-spark-100 text-spark-800 rounded-full text-sm font-medium inline-flex items-center">
             <span className="hidden md:flex h-2 w-2 rounded-full bg-spark-500 mr-1.5"></span>
             Desenvolvido para transformar agentes em máquinas de vendas
           </div>
           
           {/* Headline */}
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 tracking-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-2 md:mb-3 tracking-tight">
             CRM especializado em <span className="text-gradient">agentes de seguros</span>
           </h1>
           
           {/* Subheadline */}
-          <h2 className="text-xl md:text-3xl font-bold mb-2 md:mb-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-1 md:mb-2">
             mais organização, mais vendas, menos esforço.
           </h2>
           
           {/* Description */}
-          <p className="text-base md:text-xl text-muted-foreground mb-3 max-w-2xl">
+          <p className="text-base md:text-xl text-muted-foreground mb-2 md:mb-3 max-w-2xl">
           Chega de vender no improviso. O SparkLeads organiza sua operação para você focar no que importa: vender apólices.
           </p>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto mb-2">
+          <div className="flex flex-col sm:flex-row gap-2 md:gap-3 w-full sm:w-auto mb-1 md:mb-2">
             <a href="#demo">
               <Button size="lg" className="bg-gradient-primary text-white w-full sm:w-auto text-sm md:text-base py-2 md:py-3">
                 Quero vender mais apólices
@@ -70,11 +70,11 @@ const Hero = () => {
       </div>
       
       {/* Hero image/mockup */}
-      <div className="container mx-auto mt-4">
+      <div className="container mx-auto mt-2 md:mt-4">
         <div className="relative mx-auto max-w-4xl">
-          <div className="bg-gradient-to-b from-spark-100 to-transparent p-2 rounded-xl">
+          <div className="bg-gradient-to-b from-spark-100 to-transparent p-1 md:p-2 rounded-xl">
             <div className="w-full rounded-lg shadow-2xl overflow-hidden border border-spark-100">
-              <div className="h-8 bg-secondary flex items-center px-4 border-b">
+              <div className="h-6 md:h-8 bg-secondary flex items-center px-3 md:px-4 border-b">
                 <div className="flex space-x-2">
                   <div className="h-2.5 w-2.5 rounded-full bg-red-500"></div>
                   <div className="h-2.5 w-2.5 rounded-full bg-yellow-500"></div>
@@ -122,15 +122,15 @@ const Hero = () => {
                 {/* Pop-ups para Mobile - Versão simplificada sem ícones */}
                 <div className="md:hidden">
                   {/* Alternativa: Pop-ups sem ícones em mobile */}
-                  <div className="absolute top-2 right-2 bg-white dark:bg-gray-800 rounded-md shadow-md p-2 border border-border animate-float z-10" 
-                    style={{ maxWidth: "125px", fontSize: "0.7rem" }}>
+                  <div className="absolute top-1 right-1 bg-white dark:bg-gray-800 rounded-md shadow-md p-1.5 border border-border animate-float z-10" 
+                    style={{ maxWidth: "110px", fontSize: "0.65rem" }}>
                     <div className="text-center">
                       <p className="text-xs font-medium">Nova Apólice</p>
                     </div>
                   </div>
                   
-                  <div className="absolute bottom-2 left-2 bg-white dark:bg-gray-800 rounded-md shadow-md p-2 border border-border animate-float z-10" 
-                    style={{ animationDelay: '1s', maxWidth: "125px", fontSize: "0.7rem" }}>
+                  <div className="absolute bottom-1 left-1 bg-white dark:bg-gray-800 rounded-md shadow-md p-1.5 border border-border animate-float z-10" 
+                    style={{ animationDelay: '1s', maxWidth: "110px", fontSize: "0.65rem" }}>
                     <div className="text-center">
                       <p className="text-xs font-medium">Renovação</p>
                     </div>
@@ -142,25 +142,21 @@ const Hero = () => {
         </div>
         
         {/* Stats para telas móveis - posicionados após a imagem */}
-        <div className="mt-4 grid grid-cols-2 md:hidden gap-3 w-full max-w-3xl mx-auto">
+        <div className="mt-2 md:mt-4 grid grid-cols-2 md:hidden gap-2 w-full max-w-3xl mx-auto">
           <div className="flex flex-col items-center">
-            <div className="hidden text-spark-600 mb-1 bg-spark-100 rounded-full p-2"><Users size={18} /></div>
-            <p className="text-lg font-bold">2500+</p>
+            <p className="text-lg font-bold mb-0">300+</p>
             <p className="text-xs text-muted-foreground">Agentes ativos</p>
           </div>
           <div className="flex flex-col items-center">
-            <div className="hidden text-spark-600 mb-1 bg-spark-100 rounded-full p-2"><Shield size={18} /></div>
-            <p className="text-lg font-bold">150k+</p>
+            <p className="text-lg font-bold mb-0">150k+</p>
             <p className="text-xs text-muted-foreground">Apólices vendidas</p>
           </div>
           <div className="flex flex-col items-center">
-            <div className="hidden text-spark-600 mb-1 bg-spark-100 rounded-full p-2"><FileCheck size={18} /></div>
-            <p className="text-lg font-bold">8,5h</p>
+            <p className="text-lg font-bold mb-0">8,5h</p>
             <p className="text-xs text-muted-foreground">Tempo economizado</p>
           </div>
           <div className="flex flex-col items-center">
-            <div className="hidden text-spark-600 mb-1 bg-spark-100 rounded-full p-2"><Zap size={18} /></div>
-            <p className="text-lg font-bold">37%</p>
+            <p className="text-lg font-bold mb-0">57%</p>
             <p className="text-xs text-muted-foreground">+ Conversão</p>
           </div>
         </div>
