@@ -97,7 +97,7 @@ const Navbar = () => {
             className="rounded-full bg-green-500 hover:bg-green-600 text-white border-0"
             onClick={openWhatsApp}
           >
-            <img src="/images/chat-icon.png" alt="Chat" className="h-5 w-5" />
+            <img src="/images/chat-icon.png" alt="Chat" className="h-6 w-6" />
           </Button>
         </div>
         
@@ -109,7 +109,7 @@ const Navbar = () => {
             className="rounded-full bg-green-500 hover:bg-green-600 text-white border-0 ml-1"
             onClick={openWhatsApp}
           >
-            <img src="/images/chat-icon.png" alt="Chat" className="h-5 w-5" />
+            <img src="/images/chat-icon.png" alt="Chat" className="h-6 w-6" />
           </Button>
           
           <Button 
