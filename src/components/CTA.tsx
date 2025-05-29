@@ -20,9 +20,9 @@ const CTA = () => {
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-spark-500/20 to-transparent"></div>
           
           <div className="relative p-4 md:p-8">
-            <div className="max-w-4xl mx-auto text-center mb-6 md:mb-10">
-              <div className="mb-3">
-                <Shield className="h-10 w-10 mx-auto text-spark-500 mb-2" />
+            <div className="max-w-4xl mx-auto text-center mb-8 md:mb-10">
+              <div className="mb-4">
+                <Shield className="h-10 w-10 mx-auto text-spark-500 mb-3" />
               </div>
               <h2 className="text-2xl md:text-4xl font-bold mb-4">
                 Chega de improviso. <span className="text-gradient">Organize sua rotina</span> e aumente suas vendas.
@@ -133,54 +133,54 @@ const CTA = () => {
               </div>
               
               <div className="divide-y">
-                <div className="p-5">
-                  <div className="flex items-center mb-3">
-                    <Clock className="h-6 w-6 mr-3 text-spark-500 flex-shrink-0" />
+                <div className="p-6">
+                  <div className="flex items-center mb-4">
+                    <Clock className="h-6 w-6 mr-4 text-spark-500 flex-shrink-0" />
                     <p className="font-medium text-base">CRM & Gestão de Pipeline</p>
                   </div>
-                  <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-3 text-center mb-3 font-medium">
+                  <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 text-center mb-4 font-medium">
                     US$ 49/mês
                   </div>
-                  <div className="bg-spark-50 dark:bg-spark-900/20 rounded-lg p-3 flex justify-between items-center">
+                  <div className="bg-spark-50 dark:bg-spark-900/20 rounded-lg p-4 flex justify-between items-center">
                     <span className="font-medium">SparkLeads</span>
                     <CheckCircle className="h-6 w-6 text-green-500" />
                   </div>
                 </div>
                 
-                <div className="p-5">
-                  <div className="flex items-center mb-3">
-                    <FileCheck className="h-6 w-6 mr-3 text-spark-500 flex-shrink-0" />
+                <div className="p-6">
+                  <div className="flex items-center mb-4">
+                    <FileCheck className="h-6 w-6 mr-4 text-spark-500 flex-shrink-0" />
                     <p className="font-medium text-base">Automação de Renovações</p>
                   </div>
-                  <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-3 text-center mb-3 font-medium">
+                  <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 text-center mb-4 font-medium">
                     US$ 39/mês
                   </div>
-                  <div className="bg-spark-50 dark:bg-spark-900/20 rounded-lg p-3 flex justify-between items-center">
+                  <div className="bg-spark-50 dark:bg-spark-900/20 rounded-lg p-4 flex justify-between items-center">
                     <span className="font-medium">SparkLeads</span>
                     <CheckCircle className="h-6 w-6 text-green-500" />
                   </div>
                 </div>
                 
-                <div className="p-5">
-                  <div className="flex items-center mb-3">
-                    <MessageSquare className="h-6 w-6 mr-3 text-spark-500 flex-shrink-0" />
+                <div className="p-6">
+                  <div className="flex items-center mb-4">
+                    <MessageSquare className="h-6 w-6 mr-4 text-spark-500 flex-shrink-0" />
                     <p className="font-medium text-base">WhatsApp & SMS Integrados</p>
                   </div>
-                  <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-3 text-center mb-3 font-medium">
+                  <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 text-center mb-4 font-medium">
                     US$ 29/mês
                   </div>
-                  <div className="bg-spark-50 dark:bg-spark-900/20 rounded-lg p-3 flex justify-between items-center">
+                  <div className="bg-spark-50 dark:bg-spark-900/20 rounded-lg p-4 flex justify-between items-center">
                     <span className="font-medium">SparkLeads</span>
                     <CheckCircle className="h-6 w-6 text-green-500" />
                   </div>
                 </div>
               </div>
-              <div className="p-3 text-sm text-muted-foreground text-center">
+              <div className="p-4 text-sm text-muted-foreground text-center">
                 Tenha tudo em uma única plataforma integrada.
               </div>
             </div>
             
-            <div className="mt-8 text-center">
+            <div className="mt-10 text-center">
               <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
                 <DialogTrigger asChild>
                   <Button size="lg" className="bg-gradient-primary hover:opacity-90 text-base px-6 py-6 md:px-8 md:py-6 rounded-xl">

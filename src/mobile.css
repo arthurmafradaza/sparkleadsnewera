@@ -11,17 +11,20 @@
   /* Aumentar tamanho de fonte para melhor legibilidade */
   body {
     font-size: 16px;
+    line-height: 1.5;
   }
 
   /* Otimizar espaçamento de seções */
   section {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    margin-bottom: 1rem;
   }
 
   /* Ajustar seções adjacentes para menos espaço */
   section + section {
-    padding-top: 0.75rem;
+    padding-top: 1.5rem;
+    margin-top: 1rem;
   }
 
   /* Aumentar tamanho dos botões para facilitar o toque */
@@ -34,19 +37,19 @@
 
   /* Otimizar espaçamento entre itens de lista */
   .space-y-4 > * {
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   /* Melhorar a visualização de tabelas e grids em mobile */
   .p-4 {
-    padding: 0.75rem !important;
+    padding: 0.875rem !important;
   }
 
   /* Reduzir espaçamento em cards e elementos de comparação */
   .bg-gray-50, .bg-spark-50 {
-    padding: 0.75rem;
-    margin-bottom: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
   }
 
   /* Otimizar tamanho de ícones */
@@ -57,60 +60,103 @@
 
   /* Melhorar a navegação mobile */
   .md\:hidden .container {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   /* Ajustar botões no menu mobile */
   .md\:hidden .space-y-2 {
-    margin-top: 0.75rem;
+    margin-top: 1rem;
   }
 
   /* Ajustar headers para melhor legibilidade */
   h1 {
     font-size: 1.75rem;
-    line-height: 1.2;
-    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
   }
   
   h2 {
     font-size: 1.5rem;
-    line-height: 1.25;
-    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    margin-bottom: 0.875rem;
   }
   
   h3 {
     font-size: 1.25rem;
-    line-height: 1.3;
-    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
   }
   
   /* Melhorar espaçamento em tabelas de comparação */
   .p-4 {
-    padding: 0.75rem !important;
+    padding: 0.875rem !important;
   }
   
   /* Reduzir margens e paddings em componentes */
   .mb-4 {
-    margin-bottom: 0.75rem !important;
+    margin-bottom: 1.25rem !important;
   }
   
   .mt-4 {
-    margin-top: 0.75rem !important;
+    margin-top: 1.25rem !important;
   }
   
   .py-4 {
-    padding-top: 0.75rem !important;
-    padding-bottom: 0.75rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
   }
   
   /* Ajustar grid gaps para serem menores */
   .gap-4 {
-    gap: 0.75rem !important;
+    gap: 1rem !important;
   }
   
   .gap-3 {
-    gap: 0.5rem !important;
+    gap: 0.75rem !important;
+  }
+
+  /* Melhorar espaçamento vertical geral */
+  .mb-2 {
+    margin-bottom: 0.75rem !important;
+  }
+
+  .mb-3 {
+    margin-bottom: 1rem !important;
+  }
+
+  .mt-2 {
+    margin-top: 0.75rem !important;
+  }
+
+  .mt-3 {
+    margin-top: 1rem !important;
+  }
+
+  /* Melhorar espaçamento entre componentes */
+  .flex > *, .grid > * {
+    margin: 0.25rem 0;
+  }
+
+  /* Aumentar o espaçamento interno de containers e cards */
+  .rounded-lg, .rounded-xl {
+    padding: 0.25rem;
+  }
+
+  /* Melhorar visualização de parágrafos */
+  p {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+
+  /* Dar mais respiração aos elementos flex */
+  .flex {
+    gap: 0.5rem;
+  }
+
+  /* Adicionar mais espaço vertical entre componentes */
+  .container > div {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -130,7 +176,7 @@
   /* Melhorar margens em botões do menu mobile */
   .md\:hidden .flex.space-x-2 {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.75rem;
   }
   
   /* Ajustar largura de botões no mobile */
@@ -140,17 +186,87 @@
   
   /* Melhorar utilização de espaço em componentes com ícones */
   .flex-shrink-0 {
-    margin-right: 0.5rem !important;
+    margin-right: 0.75rem !important;
   }
   
   /* Reduzir espaçamento de padding em componentes */
   .px-6 {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
   }
   
   /* Otimizar tamanho de fontes */
   .text-lg {
     font-size: 1.125rem !important;
+  }
+
+  /* Melhorar espaçamento em tabelas comparativas e cards */
+  .divide-y > div {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  /* Aumentar espaçamento entre elementos em estatísticas */
+  .grid-cols-2 > div {
+    margin-bottom: 1rem;
+  }
+
+  /* Adicionar mais espaço ao redor de pop-ups mobile */
+  .md\:hidden .absolute {
+    margin: 0.5rem;
+  }
+
+  /* Melhorar a visualização de elementos em linha */
+  .inline-flex {
+    gap: 0.5rem;
+  }
+
+  /* Aumentar o espaçamento entre blocos de conteúdo */
+  section > div > div {
+    margin-bottom: 1rem;
+  }
+
+  /* Melhorar espaçamento em listas */
+  li {
+    margin-bottom: 0.75rem;
+  }
+
+  /* Ajustar espaçamento em formulários */
+  input, select, textarea {
+    margin-bottom: 1rem;
+  }
+
+  /* Aumentar espaçamento em contêineres de card */
+  .card, .rounded-xl, .rounded-lg {
+    margin-bottom: 1.25rem;
+  }
+} 
+
+/* Melhorar a visualização de conteúdo em telas muito pequenas */
+@media (max-width: 360px) {
+  .container {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .text-base {
+    font-size: 0.9375rem !important;
+  }
+
+  /* Aumentar ainda mais o espaçamento vertical */
+  .mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .mt-4 {
+    margin-top: 1.5rem !important;
   }
 } 
