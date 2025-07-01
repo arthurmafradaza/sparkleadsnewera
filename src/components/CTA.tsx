@@ -128,54 +128,81 @@ const CTA = () => {
             
             {/* Pricing comparison - Mobile */}
             <div className="max-w-5xl mx-auto overflow-hidden bg-white dark:bg-gray-800 rounded-xl shadow-xl md:hidden">
-              <div className="p-4 bg-secondary dark:bg-gray-900 border-b text-center">
-                <div className="font-bold text-lg mb-1">Compare Você Mesmo!</div>
+              {/* Header Row */}
+              <div className="flex items-center p-3 bg-secondary dark:bg-gray-900 border-b text-xs">
+                <div className="w-[40%] font-medium">Funcionalidades</div>
+                <div className="w-[32%] font-medium text-center">Outras Ferramentas</div>
+                <div className="w-[28%] font-medium text-center text-spark-600">SparkLeads</div>
               </div>
               
               <div className="divide-y">
-                <div className="p-6">
-                  <div className="flex items-center mb-4">
-                    <Clock className="h-6 w-6 mr-4 text-spark-500 flex-shrink-0" />
-                    <p className="font-medium text-base">CRM & Gestão de Pipeline</p>
+                <div className="flex items-start p-3">
+                  <div className="w-[40%] flex gap-1.5">
+                    <Clock className="h-4 w-4 text-spark-500 flex-shrink-0 mt-0.5" />
+                    <p className="text-xs font-medium leading-tight">CRM & Gestão de Pipeline</p>
                   </div>
-                  <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 text-center mb-4 font-medium">
-                    US$ 49/mês
-                  </div>
-                  <div className="bg-spark-50 dark:bg-spark-900/20 rounded-lg p-4 flex justify-between items-center">
-                    <span className="font-medium">SparkLeads</span>
-                    <CheckCircle className="h-6 w-6 text-green-500" />
+                  <div className="w-[32%] text-center text-xs">US$ 69/mês</div>
+                  <div className="w-[28%] flex justify-center">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
                   </div>
                 </div>
-                
-                <div className="p-6">
-                  <div className="flex items-center mb-4">
-                    <FileCheck className="h-6 w-6 mr-4 text-spark-500 flex-shrink-0" />
-                    <p className="font-medium text-base">Automação de Renovações</p>
+
+                <div className="flex items-start p-3">
+                  <div className="w-[40%] flex gap-1.5">
+                    <FileCheck className="h-4 w-4 text-spark-500 flex-shrink-0 mt-0.5" />
+                    <p className="text-xs font-medium leading-tight">Automação de Renovações</p>
                   </div>
-                  <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 text-center mb-4 font-medium">
-                    US$ 39/mês
-                  </div>
-                  <div className="bg-spark-50 dark:bg-spark-900/20 rounded-lg p-4 flex justify-between items-center">
-                    <span className="font-medium">SparkLeads</span>
-                    <CheckCircle className="h-6 w-6 text-green-500" />
+                  <div className="w-[32%] text-center text-xs">US$ 59/mês</div>
+                  <div className="w-[28%] flex justify-center">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
                   </div>
                 </div>
-                
-                <div className="p-6">
-                  <div className="flex items-center mb-4">
-                    <MessageSquare className="h-6 w-6 mr-4 text-spark-500 flex-shrink-0" />
-                    <p className="font-medium text-base">WhatsApp & SMS Integrados</p>
+
+                <div className="flex items-start p-3">
+                  <div className="w-[40%] flex gap-1.5">
+                    <MessageSquare className="h-4 w-4 text-spark-500 flex-shrink-0 mt-0.5" />
+                    <p className="text-xs font-medium leading-tight">WhatsApp & SMS Integrados</p>
                   </div>
-                  <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 text-center mb-4 font-medium">
-                    US$ 29/mês
+                  <div className="w-[32%] text-center text-xs">US$ 29/mês</div>
+                  <div className="w-[28%] flex justify-center">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
                   </div>
-                  <div className="bg-spark-50 dark:bg-spark-900/20 rounded-lg p-4 flex justify-between items-center">
-                    <span className="font-medium">SparkLeads</span>
-                    <CheckCircle className="h-6 w-6 text-green-500" />
+                </div>
+
+                <div className="flex items-start p-3">
+                  <div className="w-[40%] flex gap-1.5">
+                    <Users className="h-4 w-4 text-spark-500 flex-shrink-0 mt-0.5" />
+                    <p className="text-xs font-medium leading-tight">Agendamentos & Lembretes</p>
+                  </div>
+                  <div className="w-[32%] text-center text-xs">US$ 39/mês</div>
+                  <div className="w-[28%] flex justify-center">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                  </div>
+                </div>
+
+                <div className="flex items-start p-3">
+                  <div className="w-[40%] flex gap-1.5">
+                    <BarChart className="h-4 w-4 text-spark-500 flex-shrink-0 mt-0.5" />
+                    <p className="text-xs font-medium leading-tight">Analytics & Relatórios</p>
+                  </div>
+                  <div className="w-[32%] text-center text-xs">US$ 29/mês</div>
+                  <div className="w-[28%] flex justify-center">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                  </div>
+                </div>
+
+                <div className="flex items-start p-3">
+                  <div className="w-[40%] flex gap-1.5">
+                    <Zap className="h-4 w-4 text-spark-500 flex-shrink-0 mt-0.5" />
+                    <p className="text-xs font-medium leading-tight">Workflows e Automações</p>
+                  </div>
+                  <div className="w-[32%] text-center text-xs">US$ 159/mês</div>
+                  <div className="w-[28%] flex justify-center">
+                    <CheckCircle className="h-4 w-4 text-green-500" />
                   </div>
                 </div>
               </div>
-              <div className="p-4 text-sm text-muted-foreground text-center">
+              <div className="p-3 text-xs text-muted-foreground text-center">
                 Tenha tudo em uma única plataforma integrada.
               </div>
             </div>
