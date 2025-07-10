@@ -162,28 +162,28 @@ const Navbar = () => {
                   <User className="h-4 w-4 mr-1.5" /> Entrar
                 </Button>
               </a>
-              <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-                <DialogTrigger asChild>
+                <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+                  <DialogTrigger asChild>
                   <Button className="justify-center bg-gradient-primary hover:opacity-90 w-full py-6 text-base">Agendar Demonstração</Button>
-                </DialogTrigger>
-                <DialogContent className="sm:max-w-[700px] max-h-[90vh] overflow-auto">
-                  <DialogHeader>
-                    <DialogTitle className="text-xl text-center">Agende sua demonstração</DialogTitle>
-                    <DialogDescription className="text-center mb-4">
-                      Escolha um horário que funcione melhor para você.
-                    </DialogDescription>
-                  </DialogHeader>
-                  <div className="pt-2">
-                    <iframe 
-                      src="https://internal.sparkleads.pro/widget/booking/cFxp3HNIh6NAPRv2p4VZ" 
-                      style={{ width: '100%', border: 'none', overflow: 'hidden' }} 
-                      scrolling="no" 
-                      id="cFxp3HNIh6NAPRv2p4VZ_1748012106009_mobile"
-                      className="min-h-[600px]"
-                    ></iframe>
-                  </div>
-                </DialogContent>
-              </Dialog>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-[700px] max-h-[90vh] overflow-auto">
+                    <DialogHeader>
+                      <DialogTitle className="text-xl text-center">Agende sua demonstração</DialogTitle>
+                      <DialogDescription className="text-center mb-4">
+                        Escolha um horário que funcione melhor para você.
+                      </DialogDescription>
+                    </DialogHeader>
+                    <div className="pt-2">
+                      <iframe 
+                        src="https://internal.sparkleads.pro/widget/booking/cFxp3HNIh6NAPRv2p4VZ" 
+                        style={{ width: '100%', border: 'none', overflow: 'hidden' }} 
+                        scrolling="no" 
+                        id="cFxp3HNIh6NAPRv2p4VZ_1748012106009_mobile"
+                        className="min-h-[600px]"
+                      ></iframe>
+                    </div>
+                  </DialogContent>
+                </Dialog>
             </div>
           </div>
         </div>

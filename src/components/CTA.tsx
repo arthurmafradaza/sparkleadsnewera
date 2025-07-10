@@ -146,7 +146,7 @@ const CTA = () => {
                     <CheckCircle className="h-4 w-4 text-green-500" />
                   </div>
                 </div>
-
+                
                 <div className="flex items-start p-3">
                   <div className="w-[40%] flex gap-1.5">
                     <FileCheck className="h-4 w-4 text-spark-500 flex-shrink-0 mt-0.5" />
@@ -157,7 +157,7 @@ const CTA = () => {
                     <CheckCircle className="h-4 w-4 text-green-500" />
                   </div>
                 </div>
-
+                
                 <div className="flex items-start p-3">
                   <div className="w-[40%] flex gap-1.5">
                     <MessageSquare className="h-4 w-4 text-spark-500 flex-shrink-0 mt-0.5" />
@@ -168,7 +168,7 @@ const CTA = () => {
                     <CheckCircle className="h-4 w-4 text-green-500" />
                   </div>
                 </div>
-
+                
                 <div className="flex items-start p-3">
                   <div className="w-[40%] flex gap-1.5">
                     <Users className="h-4 w-4 text-spark-500 flex-shrink-0 mt-0.5" />
@@ -179,7 +179,7 @@ const CTA = () => {
                     <CheckCircle className="h-4 w-4 text-green-500" />
                   </div>
                 </div>
-
+                
                 <div className="flex items-start p-3">
                   <div className="w-[40%] flex gap-1.5">
                     <BarChart className="h-4 w-4 text-spark-500 flex-shrink-0 mt-0.5" />
@@ -190,7 +190,7 @@ const CTA = () => {
                     <CheckCircle className="h-4 w-4 text-green-500" />
                   </div>
                 </div>
-
+                
                 <div className="flex items-start p-3">
                   <div className="w-[40%] flex gap-1.5">
                     <Zap className="h-4 w-4 text-spark-500 flex-shrink-0 mt-0.5" />

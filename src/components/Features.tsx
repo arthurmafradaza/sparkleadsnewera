@@ -95,11 +95,11 @@ const features: Feature[] = [
       },
       {
         title: "Metas e Projeções",
-        description: "Defina metas realistas e acompanhe seus resultados em tempo real, com foco total na sua produção."
+        description: "Acompanhe seus resultados em tempo real, com foco total na sua produção."
       },
       {
         title: "Indicadores que importam",
-        description: "Acompanhe os números que movem sua agência: quantidade de leads, taxa de conversão, apólices emitidas e recorrência."
+        description: "Acompanhe os números que movem sua agência: quantidade de leads, taxa de conversão, apólices emitidas e todos os seus agendamentos."
       }
     ]
   },
